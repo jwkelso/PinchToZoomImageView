@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jameskelso.android.widget.PinchToZoomImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="2px"
+    android:paddingLeft="5px"
+    android:paddingRight="4px"
+    android:paddingTop="3px">
+
+</com.jameskelso.android.widget.PinchToZoomImageView>

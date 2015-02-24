@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.jameskelso.android.widget.sample"
-        minSdkVersion 10
+        minSdkVersion 16
         targetSdkVersion 21
         versionCode 1
         versionName "1.0"

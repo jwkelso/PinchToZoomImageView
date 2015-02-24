@@ -73,14 +73,24 @@ public class PinchToZoomSavedStateTest extends AndroidTestCase {
         assertEquals(TOUCH_MODE, state.touchMode);
     }
 
-    public void testConstructorFromParcelFirstTouch() {
+    public void testConstructorFromParcelFirstTouchX() {
         PinchToZoomSavedState state = new PinchToZoomSavedState(mParcel);
-        assertEquals(FIRST_TOUCH, state.firstTouch);
+        assertEquals(FIRST_TOUCH.x, state.firstTouch.x);
     }
 
-    public void testConstructorFromParcelLastTouch() {
+    public void testConstructorFromParcelFirstTouchY() {
         PinchToZoomSavedState state = new PinchToZoomSavedState(mParcel);
-        assertEquals(LAST_TOUCH, state.lastTouch);
+        assertEquals(FIRST_TOUCH.y, state.firstTouch.y);
+    }
+
+    public void testConstructorFromParcelLastTouchX() {
+        PinchToZoomSavedState state = new PinchToZoomSavedState(mParcel);
+        assertEquals(LAST_TOUCH.x, state.lastTouch.x);
+    }
+
+    public void testConstructorFromParcelLastTouchY() {
+        PinchToZoomSavedState state = new PinchToZoomSavedState(mParcel);
+        assertEquals(LAST_TOUCH.y, state.lastTouch.y);
     }
 
     public void testConstructorFromParcelCropToPadding() {

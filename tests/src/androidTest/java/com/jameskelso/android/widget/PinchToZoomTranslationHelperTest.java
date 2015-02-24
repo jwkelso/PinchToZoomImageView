@@ -452,7 +452,7 @@ public class PinchToZoomTranslationHelperTest extends AndroidTestCase {
         state.translationExtraStart = 50;
         state.cropToPadding = true;
         float edge = mHelper.findFirstEdgeForTranslationCorrection(state);
-        assertEquals(-150f, edge);
+        assertEquals(-100f, edge);
     }
 
     public void testFindSecondEdgeForTranslationCorrection() {

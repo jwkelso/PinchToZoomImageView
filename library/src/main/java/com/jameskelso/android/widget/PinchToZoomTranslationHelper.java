@@ -277,9 +277,10 @@ class PinchToZoomTranslationHelper {
         float firstEdge = 0;
         firstEdge -= state.getAdditionalTranslationForScaledBitmapSize();
         firstEdge -= state.translationExtraStart;
-        // This correction is without regard to state.cropToPadding. This is because of oddities in
-        // how the ImageView handles drawing the bitmap with padding.
-        firstEdge -= state.paddingStart;
+
+        if (!state.cropToPadding) {
+            firstEdge -= state.paddingStart;
+        }
 
         return firstEdge;
     }

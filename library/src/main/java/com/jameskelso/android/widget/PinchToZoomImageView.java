@@ -294,7 +294,9 @@ public class PinchToZoomImageView extends ImageView implements
      */
     @Override
     public void setPadding(int left, int top, int right, int bottom) {
-        mMatrixHelper.setPadding(left, top, right, bottom);
+        if (mMatrixHelper != null) {
+            mMatrixHelper.setPadding(left, top, right, bottom);
+        }
         super.setPadding(left, top, right, bottom);
     }
 

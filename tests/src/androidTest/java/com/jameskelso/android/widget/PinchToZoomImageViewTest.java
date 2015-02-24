@@ -173,11 +173,6 @@ public class PinchToZoomImageViewTest extends AndroidTestCase {
     }
 
     public void testResolveAttrsCropToPadding() {
-        // Test is only valid for SDK 16 and up
-        if (Build.VERSION.SDK_INT < 16) {
-            return;
-        }
-
         PinchToZoomImageView imgView = inflateFromResId(R.layout.crop_to_padding);
         PinchToZoomMatrixHelper helper = imgView.mMatrixHelper;
         assertTrue(helper.mCropToPadding);
@@ -499,11 +494,6 @@ public class PinchToZoomImageViewTest extends AndroidTestCase {
 
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     public void testSetCropToPadding() {
-        // Test is only valid for SDK 17 and up
-        if (Build.VERSION.SDK_INT < 16) {
-            return;
-        }
-
         PinchToZoomImageView imgView = new PinchToZoomImageView(getContext());
         imgView.setCropToPadding(true);
         assertTrue(imgView.getCropToPadding());

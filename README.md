@@ -1,12 +1,4 @@
-<<<<<<< HEAD
 # PinchToZoomImageView
-<<<<<<< HEAD
-An ImageView which allows scaling of its source image using pinch and spread gestures
-=======
-# android-maven
-Convenient place to house all maven deployments of my personal Github Android libraries
->>>>>>> 5d82552... Initial commit
-=======
 An ImageView that allows for scaling and panning an image using pinch, stretch, and pan gestures.
 Since this widget controls its own scaling and translation, ```setScaleType(ImageView.ScaleType)```
 with a scale type of anything other than ```ImageView.ScaleType.MATRIX``` is disallowed.
@@ -111,4 +103,3 @@ dependencies {
     compile 'com.jameskelso:pinch-to-zoom-imageview:1.0.0'
 }
 </pre>
->>>>>>> b7ace9b... Update readme.md

@@ -59,6 +59,7 @@ public class PinchToZoomSavedStateTest extends AndroidTestCase {
     @Override
     public void tearDown() throws Exception {
         mState = null;
+        mParcel.recycle();
         mParcel = null;
         super.tearDown();
     }
